@@ -8,7 +8,7 @@
 
 ### 安装
 1. 确认已安装 Tampermonkey。
-2. 把 `dlsite-wishlist-sort.user.js` 拖进浏览器，或在 Tampermonkey 面板 →「实用工具」→ 从文件导入 → 选这个文件，点「安装」。
+2. 在 [Greasy Fork](https://greasyfork.org/zh-CN/scripts/602350-dlsite) 点「安装此脚本」；或把 `dlsite-wishlist-sort.user.js` 拖进浏览器，或在 Tampermonkey 面板 →「实用工具」→ 从文件导入 → 选这个文件，点「安装」。
 3. 打开 DLsite 收藏夹页面，原生"排序"栏下面会多出一条「按折扣排序」工具栏。
 
 ### 使用
@@ -36,7 +36,7 @@
 打开 DLsite 购物车页面，脚本会在商品列表上方给出一份"怎么分单、每单用哪张券"的方案，并在每件作品下方标出它能用的券和组合特价状态。
 
 ### 安装
-把 `dlsite-cart-optimizer.user.js` 拖进浏览器，Tampermonkey 会提示安装。
+在 [Greasy Fork](https://greasyfork.org/zh-CN/scripts/602351-dlsite) 点「安装此脚本」；或把 `dlsite-cart-optimizer.user.js` 拖进浏览器，Tampermonkey 会提示安装。
 
 ### 它怎么算
 计算规则全部照搬自 DLsite 购物车页面自己的代码（`PaymentSummary` 组件和 `Bulkbuy` 对象），不是猜的：

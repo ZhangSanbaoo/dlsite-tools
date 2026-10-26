@@ -6,7 +6,7 @@
 
 ## インストール
 
-Chrome ウェブストア（準備中）から、または手動で：
+[Chrome ウェブストア](https://chromewebstore.google.com/detail/nbmhpjbgahnfbabcflpcbkppnllbiihe)（審査通過後に有効）から、または手動で：
 1. リリースの zip を固定の場所に展開。
 2. `chrome://extensions` を開き、**デベロッパーモード** をオン。
 3. **パッケージ化されていない拡張機能を読み込む** → `ordered-image-downloader` フォルダを選択。

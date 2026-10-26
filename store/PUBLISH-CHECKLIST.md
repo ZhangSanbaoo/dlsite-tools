@@ -12,7 +12,7 @@
 
 ## 2. Greasy Fork（两个脚本）
 见 store/greasyfork-notes.md。记得勾「成人内容」。
-发布后把 README 里 `[Greasy Fork](#)（待发布）` 的 `#` 换成实际链接。
+已发布：Greasy Fork 602350 / 602351，Chrome 扩展 ID nbmhpjbgahnfbabcflpcbkppnllbiihe（README 已更新）。
 
 ## 3. Chrome Web Store（扩展）
 1. https://chrome.google.com/webstore/devconsole 注册开发者（一次性 5 美元）。

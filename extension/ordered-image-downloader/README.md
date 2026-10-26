@@ -8,10 +8,13 @@
 
 ## 安装
 
-1. 解压本压缩包到任意固定位置（不要删，Chrome 会直接从这个目录加载）。
+**推荐**：从 [Chrome 应用商店](https://chromewebstore.google.com/detail/nbmhpjbgahnfbabcflpcbkppnllbiihe) 一键安装（审核通过后生效）。
+
+手动安装：
+1. 从 [Release](https://github.com/ZhangSanbaoo/dlsite-tools/releases) 下载压缩包，解压到任意固定位置（不要删，Chrome 会直接从这个目录加载）。
 2. 打开 Chrome，地址栏输入 `chrome://extensions` 回车。
 3. 右上角打开「开发者模式」。
-4. 点击「加载已解压的扩展程序」，选择解压出来的 `img-dl-ext` 文件夹。
+4. 点击「加载已解压的扩展程序」，选择解压出来的 `ordered-image-downloader` 文件夹。
 5. 点浏览器右上角的拼图图标，把「顺序图片下载器」固定到工具栏。
 
 Edge 等 Chromium 内核浏览器安装方式相同（`edge://extensions`）。

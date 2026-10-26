@@ -6,9 +6,9 @@
 
 | 工具 | 类型 | 作用 | 安装 |
 |---|---|---|---|
-| **顺序图片下载器** | Chrome 扩展 | 按页面从上到下顺序预览、挑选、拖拽排序并批量下载图片，自动按 `00, 01…` 编号 | [Chrome 应用商店](#)（待上架）· 或下载 [Release](../../releases) 解压后"加载已解压的扩展程序" |
-| **DLsite 收藏夹按折扣排序** | 油猴脚本 | 像 Steam 一样把收藏夹按折扣力度 / 折后价 / 节省金额跨分页排序，按折扣筛选，一键清理已购买 | [Greasy Fork](#)（待发布）· 或直接安装 [`userscripts/dlsite-wishlist-sort.user.js`](userscripts/dlsite-wishlist-sort.user.js) |
-| **DLsite 购物车优惠方案** | 油猴脚本 | 照搬 DLsite 自己的计价规则，算出最省钱的分单方案，给每件作品标注可用券和组合特价状态 | [Greasy Fork](#)（待发布）· 或直接安装 [`userscripts/dlsite-cart-optimizer.user.js`](userscripts/dlsite-cart-optimizer.user.js) |
+| **顺序图片下载器** | Chrome 扩展 | 按页面从上到下顺序预览、挑选、拖拽排序并批量下载图片，自动按 `00, 01…` 编号 | [Chrome 应用商店](https://chromewebstore.google.com/detail/nbmhpjbgahnfbabcflpcbkppnllbiihe)（审核中）· 或下载 [Release](../../releases) 解压后"加载已解压的扩展程序" |
+| **DLsite 收藏夹按折扣排序** | 油猴脚本 | 像 Steam 一样把收藏夹按折扣力度 / 折后价 / 节省金额跨分页排序，按折扣筛选，一键清理已购买 | [Greasy Fork](https://greasyfork.org/zh-CN/scripts/602350-dlsite) · 或直接安装 [`userscripts/dlsite-wishlist-sort.user.js`](userscripts/dlsite-wishlist-sort.user.js) |
+| **DLsite 购物车优惠方案** | 油猴脚本 | 照搬 DLsite 自己的计价规则，算出最省钱的分单方案，给每件作品标注可用券和组合特价状态 | [Greasy Fork](https://greasyfork.org/zh-CN/scripts/602351-dlsite) · 或直接安装 [`userscripts/dlsite-cart-optimizer.user.js`](userscripts/dlsite-cart-optimizer.user.js) |
 
 油猴脚本需要先安装 [Tampermonkey](https://www.tampermonkey.net/)。
 

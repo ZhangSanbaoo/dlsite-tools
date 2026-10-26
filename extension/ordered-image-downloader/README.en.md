@@ -6,7 +6,7 @@ Preview the images on the current page in top-to-bottom order, untick the ones y
 
 ## Install
 
-From the Chrome Web Store (link pending), or manually:
+From the [Chrome Web Store](https://chromewebstore.google.com/detail/nbmhpjbgahnfbabcflpcbkppnllbiihe) (available once the review passes), or manually:
 1. Unzip the release to a permanent location.
 2. Open `chrome://extensions`, turn on **Developer mode**.
 3. **Load unpacked** → select the `ordered-image-downloader` folder.

@@ -6,9 +6,9 @@ Three small tools. The UI follows your browser / DLsite language (中文 / Engli
 
 | Tool | Type | What it does | Install |
 |---|---|---|---|
-| **Ordered Image Downloader** | Chrome extension | Preview, pick, drag-reorder and batch-download the images on a page in top-to-bottom order, auto-numbered `00, 01…` | [Chrome Web Store](#) (pending) · or download a [Release](../../releases), unzip, and "Load unpacked" |
-| **DLsite Wishlist: Sort by Discount** | Userscript | Sort your wishlist by discount rate / sale price / amount saved across all pages, Steam-style; filter by discount; clean up purchased items | [Greasy Fork](#) (pending) · or install [`userscripts/dlsite-wishlist-sort.user.js`](userscripts/dlsite-wishlist-sort.user.js) |
-| **DLsite Cart Savings Planner** | Userscript | Uses DLsite's own pricing rules to find the cheapest way to split checkout; tags every item with usable coupons and bundle status | [Greasy Fork](#) (pending) · or install [`userscripts/dlsite-cart-optimizer.user.js`](userscripts/dlsite-cart-optimizer.user.js) |
+| **Ordered Image Downloader** | Chrome extension | Preview, pick, drag-reorder and batch-download the images on a page in top-to-bottom order, auto-numbered `00, 01…` | [Chrome Web Store](https://chromewebstore.google.com/detail/nbmhpjbgahnfbabcflpcbkppnllbiihe) (in review) · or download a [Release](../../releases), unzip, and "Load unpacked" |
+| **DLsite Wishlist: Sort by Discount** | Userscript | Sort your wishlist by discount rate / sale price / amount saved across all pages, Steam-style; filter by discount; clean up purchased items | [Greasy Fork](https://greasyfork.org/en/scripts/602350-dlsite) · or install [`userscripts/dlsite-wishlist-sort.user.js`](userscripts/dlsite-wishlist-sort.user.js) |
+| **DLsite Cart Savings Planner** | Userscript | Uses DLsite's own pricing rules to find the cheapest way to split checkout; tags every item with usable coupons and bundle status | [Greasy Fork](https://greasyfork.org/en/scripts/602351-dlsite) · or install [`userscripts/dlsite-cart-optimizer.user.js`](userscripts/dlsite-cart-optimizer.user.js) |
 
 Userscripts require [Tampermonkey](https://www.tampermonkey.net/).
 

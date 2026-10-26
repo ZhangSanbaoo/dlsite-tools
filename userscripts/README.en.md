@@ -6,6 +6,8 @@ Both scripts need [Tampermonkey](https://www.tampermonkey.net/). The UI follows 
 
 ## DLsite Wishlist: Sort by Discount
 
+Install from [Greasy Fork](https://greasyfork.org/en/scripts/602350-dlsite) or open `dlsite-wishlist-sort.user.js` in your browser.
+
 Adds a "Sort by discount" bar under the native sort controls on your wishlist page.
 
 - **Enable** fetches every page of the wishlist under your current filters (100 per page; ~40 requests for 4,000 items, a dozen seconds the first time), then verifies discount rate / price / end date via DLsite's product-info API and replaces the native list. Results are cached for 15 minutes; **Refresh** forces a re-fetch.
@@ -19,6 +21,8 @@ Adds a "Sort by discount" bar under the native sort controls on your wishlist pa
 - **Exit** restores the native list. The enabled state is remembered.
 
 ## DLsite Cart Savings Planner
+
+Install from [Greasy Fork](https://greasyfork.org/en/scripts/602351-dlsite) or open `dlsite-cart-optimizer.user.js` in your browser.
 
 Adds a collapsible "Cart savings planner" panel above the cart list.
 
