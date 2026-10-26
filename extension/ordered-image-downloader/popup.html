@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title data-i18n="extName">顺序图片下载器</title>
+<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <!-- 选图视图 -->
+  <div id="pickView" class="view">
+    <header class="bar">
+      <input id="folderName" type="text" data-i18n-placeholder="folderPlaceholder" placeholder="输入文件夹名称（必填）" autocomplete="off" spellcheck="false">
+      <button id="confirmBtn" class="primary" data-i18n="startDownload">开始下载</button>
+      <button id="settingsBtn" class="icon" title="设置" data-i18n-title="settings"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg></button>
+    </header>
+    <div id="jobBanner" class="banner" hidden>
+      <span id="jobBannerText"></span>
+      <button id="jobBannerBtn" class="link" data-i18n="viewProgress">查看进度 ›</button>
+    </div>
+    <div class="toolbar">
+      <span id="status" data-i18n="scanning">正在扫描页面…</span>
+      <span class="spacer"></span>
+      <button id="selectAllBtn" class="link" data-i18n="selectAll">全选</button>
+      <button id="selectNoneBtn" class="link" data-i18n="selectNone">全不选</button>
+      <button id="rescanBtn" class="link" data-i18n="rescan" data-i18n-title="rescanTitle">重新扫描</button>
+    </div>
+    <p class="hint" data-i18n="pickHint">点击取消或选中，拖动调整顺序。编号按已选图片的顺序从 00 开始，页面刷新前都会保留。</p>
+    <div id="grid" class="grid"></div>
+    <div id="empty" class="empty" hidden>
+      <div id="emptyText"></div>
+      <button id="scanBtn" class="primary" data-i18n="scanBtn">开始扫描</button>
+    </div>
+  </div>
+
+  <!-- 下载进度视图 -->
+  <div id="progressView" class="view" hidden>
+    <header class="bar progressHead">
+      <div class="headRow">
+        <div class="title"><span id="pTitle" data-i18n="downloading">正在下载</span> → <b id="pFolder"></b></div>
+        <span class="spacer"></span>
+        <span id="pCount" class="count"></span>
+      </div>
+      <div class="progress"><div id="pBar" class="progressFill"></div></div>
+      <div class="headRow stats">
+        <span class="stat ok"><span data-i18n="statOk">成功</span> <b id="pDone">0</b></span>
+        <span class="stat fail"><span data-i18n="statFail">失败</span> <b id="pFailed">0</b></span>
+        <span class="stat wait"><span data-i18n="statWait">等待</span> <b id="pPending">0</b></span>
+        <span class="spacer"></span>
+        <button id="retryBtn" class="link strong" hidden data-i18n="retryFailed">重试失败的图片</button>
+        <button id="openFolderBtn" class="link" hidden data-i18n="openFolder">打开文件夹</button>
+        <button id="backBtn" class="link" data-i18n="backAdjust">‹ 返回调整</button>
+      </div>
+    </header>
+    <div id="pGate" class="banner gate" hidden>
+      <span id="pGateText"></span>
+      <button id="pGateBtn" class="primary"></button>
+    </div>
+    <p id="pHint" class="hint" data-i18n="hintBackground">关掉这个窗口也没关系，下载会在后台继续。</p>
+    <div id="pGrid" class="grid pgrid"></div>
+  </div>
+
+  <script src="i18n.js"></script>
+  <script src="settings.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

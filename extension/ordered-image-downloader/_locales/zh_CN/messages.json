@@ -1,0 +1,260 @@
+{
+  "extName": {
+    "message": "顺序图片下载器"
+  },
+  "extDesc": {
+    "message": "按页面从上到下的顺序预览、挑选、拖拽排序并批量下载当前页图片，自动按 00、01… 编号。"
+  },
+  "folderPlaceholder": {
+    "message": "输入文件夹名称（必填）"
+  },
+  "startDownload": {
+    "message": "开始下载"
+  },
+  "settings": {
+    "message": "设置"
+  },
+  "viewProgress": {
+    "message": "查看进度 ›"
+  },
+  "scanning": {
+    "message": "正在扫描页面…"
+  },
+  "selectAll": {
+    "message": "全选"
+  },
+  "selectNone": {
+    "message": "全不选"
+  },
+  "rescan": {
+    "message": "重新扫描"
+  },
+  "rescanTitle": {
+    "message": "重新扫描当前页面（会丢弃当前的选择和排序）"
+  },
+  "pickHint": {
+    "message": "点击取消或选中，拖动调整顺序。编号按已选图片的顺序从 00 开始，页面刷新前都会保留。"
+  },
+  "scanBtn": {
+    "message": "开始扫描"
+  },
+  "scanningLong": {
+    "message": "正在扫描页面（会自动滚动以加载懒加载图片）…"
+  },
+  "pageUnsupported": {
+    "message": "当前页面不支持"
+  },
+  "pageUnsupportedLong": {
+    "message": "此页面无法扫描（浏览器内部页面、应用商店等不允许注入脚本）。"
+  },
+  "scanFailed": {
+    "message": "扫描失败"
+  },
+  "scanFailedLong": {
+    "message": "扫描失败：$1\n请刷新页面后重试。"
+  },
+  "noResponse": {
+    "message": "无响应"
+  },
+  "noImages": {
+    "message": "未找到图片"
+  },
+  "noImagesLong": {
+    "message": "没有找到符合条件的图片。\n可以在设置中关闭尺寸过滤或开启抓取背景图后重新扫描。"
+  },
+  "inlineImage": {
+    "message": "(内嵌图片)"
+  },
+  "countStatus": {
+    "message": "共 $1 张，已选 $2 张"
+  },
+  "folderNameFirst": {
+    "message": "先给文件夹起个名字"
+  },
+  "cannotStart": {
+    "message": "无法开始下载：$1"
+  },
+  "noDirConfirm": {
+    "message": "还没有选择保存位置。现在打开设置页选择一个文件夹吗？\n（Chrome 不允许直接选「桌面」本身，请在桌面上新建一个文件夹再选它。）"
+  },
+  "needPermConfirm": {
+    "message": "需要允许插件访问「$1」文件夹才能下载。如果刚才没有看到授权提示，可以到设置页点「允许访问」。现在打开设置页吗？"
+  },
+  "noDirShort": {
+    "message": "还没有选择保存位置。"
+  },
+  "goPickDir": {
+    "message": "去设置页选择文件夹"
+  },
+  "needPermShort": {
+    "message": "需要允许插件访问「$1」文件夹。"
+  },
+  "grantAccessTo": {
+    "message": "允许访问「$1」"
+  },
+  "errorPrefix": {
+    "message": "出错：$1"
+  },
+  "retry": {
+    "message": "重试"
+  },
+  "bannerRunning": {
+    "message": "正在下载到「$1」：$2 / $3"
+  },
+  "bannerDone": {
+    "message": "「$1」已下载完成：成功 $2"
+  },
+  "bannerDoneFailed": {
+    "message": "「$1」已下载完成：成功 $2，失败 $3"
+  },
+  "downloading": {
+    "message": "正在下载"
+  },
+  "doneWithFail": {
+    "message": "已完成（有失败）"
+  },
+  "allDone": {
+    "message": "全部完成"
+  },
+  "statOk": {
+    "message": "成功"
+  },
+  "statFail": {
+    "message": "失败"
+  },
+  "statWait": {
+    "message": "等待"
+  },
+  "retryFailed": {
+    "message": "重试失败的图片"
+  },
+  "openFolder": {
+    "message": "打开文件夹"
+  },
+  "backAdjust": {
+    "message": "‹ 返回调整"
+  },
+  "hintBackground": {
+    "message": "关掉这个窗口也没关系，下载会在后台继续。"
+  },
+  "hintDirect": {
+    "message": "正在直接写入「$1」。关掉这个窗口也没关系，下载会在后台继续。"
+  },
+  "failedPrefix": {
+    "message": "失败：$1"
+  },
+  "errDirect": {
+    "message": "直接下载: $1"
+  },
+  "errNoType": {
+    "message": "无法确定图片类型，跳过直接下载"
+  },
+  "errInPage": {
+    "message": "页面内获取: $1"
+  },
+  "errBackground": {
+    "message": "后台获取: $1"
+  },
+  "errEmpty": {
+    "message": "空响应"
+  },
+  "errOffscreenNoResp": {
+    "message": "后台文档无响应"
+  },
+  "errJobRunning": {
+    "message": "已有下载任务正在进行"
+  },
+  "errNoRetry": {
+    "message": "没有可重试的任务"
+  },
+  "errRunning": {
+    "message": "任务进行中"
+  },
+  "errMkdir": {
+    "message": "无法在「$1」里创建文件夹「$2」：$3"
+  },
+  "offscreenJustification": {
+    "message": "把下载的图片直接写入用户选择的文件夹"
+  },
+  "optTitle": {
+    "message": "设置"
+  },
+  "optLead": {
+    "message": "改动会立即保存。"
+  },
+  "optFilter": {
+    "message": "跳过小图片"
+  },
+  "optFilterSub": {
+    "message": "排除图标、头像、追踪像素"
+  },
+  "optMinW": {
+    "message": "宽至少"
+  },
+  "optMinH": {
+    "message": "高至少"
+  },
+  "optDedupe": {
+    "message": "去掉重复图片"
+  },
+  "optDedupeSub": {
+    "message": "相同地址只保留第一张"
+  },
+  "optAutoScroll": {
+    "message": "扫描前自动滚动页面"
+  },
+  "optAutoScrollSub": {
+    "message": "让懒加载的图片显示出来，长页面会多花几秒"
+  },
+  "optBg": {
+    "message": "同时抓取背景图"
+  },
+  "optBgSub": {
+    "message": "有些网站把图片做成 CSS 背景；开启后扫描会变慢"
+  },
+  "optSaveMode": {
+    "message": "保存方式"
+  },
+  "optSaveBrowser": {
+    "message": "浏览器下载（默认）"
+  },
+  "optSaveDirect": {
+    "message": "直接写入我选的文件夹"
+  },
+  "optDirLabel": {
+    "message": "保存位置："
+  },
+  "optDirSub": {
+    "message": "Chrome 不允许直接选「桌面」「文档」「下载」这几个文件夹本身。请在桌面上新建一个文件夹（如「图片」）再选它，之后每次下载的文件夹都会建在它里面。"
+  },
+  "optGrant": {
+    "message": "允许访问"
+  },
+  "optPick": {
+    "message": "选择文件夹"
+  },
+  "optConcurrency": {
+    "message": "同时下载数量"
+  },
+  "optNoteDirect": {
+    "message": "「直接写入」模式：选一次保存位置，之后每次都在里面自动创建以你输入的名称命名的文件夹，并把图片直接写进去。不经过浏览器下载列表，和 IDM 等下载工具互不干扰。每次重新打开浏览器后第一次下载时，弹窗里会要求点一下\"允许访问\"。"
+  },
+  "optNoteBrowser": {
+    "message": "「浏览器下载」模式：图片存到 Chrome 默认下载目录里的子文件夹。与 IDM 等下载扩展同时启用时，IDM 卡片上会出现一条无害的命名冲突提示。"
+  },
+  "saved": {
+    "message": "已保存"
+  },
+  "notChosen": {
+    "message": "尚未选择"
+  },
+  "granted": {
+    "message": "（已授权）"
+  },
+  "notGranted": {
+    "message": "（本次尚未授权）"
+  },
+  "noFsApi": {
+    "message": "当前浏览器不支持直接写入文件夹，请改用\"浏览器下载\"模式。"
+  }
+}

@@ -1,0 +1,260 @@
+{
+  "extName": {
+    "message": "Ordered Image Downloader"
+  },
+  "extDesc": {
+    "message": "Preview, pick, drag-reorder and batch-download the images on the current page in top-to-bottom order, auto-numbered 00, 01…"
+  },
+  "folderPlaceholder": {
+    "message": "Folder name (required)"
+  },
+  "startDownload": {
+    "message": "Start download"
+  },
+  "settings": {
+    "message": "Settings"
+  },
+  "viewProgress": {
+    "message": "View progress ›"
+  },
+  "scanning": {
+    "message": "Scanning page…"
+  },
+  "selectAll": {
+    "message": "Select all"
+  },
+  "selectNone": {
+    "message": "Select none"
+  },
+  "rescan": {
+    "message": "Rescan"
+  },
+  "rescanTitle": {
+    "message": "Rescan the page (discards current selection and order)"
+  },
+  "pickHint": {
+    "message": "Click to toggle, drag to reorder. Numbers follow the order of selected images starting at 00 and are kept until the page reloads."
+  },
+  "scanBtn": {
+    "message": "Scan page"
+  },
+  "scanningLong": {
+    "message": "Scanning page (auto-scrolling to trigger lazy-loaded images)…"
+  },
+  "pageUnsupported": {
+    "message": "This page is not supported"
+  },
+  "pageUnsupportedLong": {
+    "message": "This page can't be scanned (browser-internal pages and the Web Store don't allow scripts)."
+  },
+  "scanFailed": {
+    "message": "Scan failed"
+  },
+  "scanFailedLong": {
+    "message": "Scan failed: $1\nReload the page and try again."
+  },
+  "noResponse": {
+    "message": "no response"
+  },
+  "noImages": {
+    "message": "No images found"
+  },
+  "noImagesLong": {
+    "message": "No matching images.\nTry turning off the size filter or enabling background images in Settings, then rescan."
+  },
+  "inlineImage": {
+    "message": "(inline image)"
+  },
+  "countStatus": {
+    "message": "$1 images, $2 selected"
+  },
+  "folderNameFirst": {
+    "message": "Give the folder a name first"
+  },
+  "cannotStart": {
+    "message": "Can't start download: $1"
+  },
+  "noDirConfirm": {
+    "message": "No save location chosen yet. Open Settings to pick a folder now?\n(Chrome doesn't allow picking the Desktop itself — create a folder on the Desktop and pick that.)"
+  },
+  "needPermConfirm": {
+    "message": "The extension needs permission to access the “$1” folder. If you didn't see a prompt, you can click “Grant access” in Settings. Open Settings now?"
+  },
+  "noDirShort": {
+    "message": "No save location chosen yet."
+  },
+  "goPickDir": {
+    "message": "Choose a folder in Settings"
+  },
+  "needPermShort": {
+    "message": "Permission needed to access the “$1” folder."
+  },
+  "grantAccessTo": {
+    "message": "Grant access to “$1”"
+  },
+  "errorPrefix": {
+    "message": "Error: $1"
+  },
+  "retry": {
+    "message": "Retry"
+  },
+  "bannerRunning": {
+    "message": "Downloading to “$1”: $2 / $3"
+  },
+  "bannerDone": {
+    "message": "“$1” finished: $2 succeeded"
+  },
+  "bannerDoneFailed": {
+    "message": "“$1” finished: $2 succeeded, $3 failed"
+  },
+  "downloading": {
+    "message": "Downloading"
+  },
+  "doneWithFail": {
+    "message": "Finished (with failures)"
+  },
+  "allDone": {
+    "message": "All done"
+  },
+  "statOk": {
+    "message": "Done"
+  },
+  "statFail": {
+    "message": "Failed"
+  },
+  "statWait": {
+    "message": "Waiting"
+  },
+  "retryFailed": {
+    "message": "Retry failed images"
+  },
+  "openFolder": {
+    "message": "Open folder"
+  },
+  "backAdjust": {
+    "message": "‹ Back to selection"
+  },
+  "hintBackground": {
+    "message": "You can close this window; the download continues in the background."
+  },
+  "hintDirect": {
+    "message": "Writing directly into “$1”. You can close this window; the download continues in the background."
+  },
+  "failedPrefix": {
+    "message": "Failed: $1"
+  },
+  "errDirect": {
+    "message": "direct download: $1"
+  },
+  "errNoType": {
+    "message": "image type unknown, skipped direct download"
+  },
+  "errInPage": {
+    "message": "in-page fetch: $1"
+  },
+  "errBackground": {
+    "message": "background fetch: $1"
+  },
+  "errEmpty": {
+    "message": "empty response"
+  },
+  "errOffscreenNoResp": {
+    "message": "background document did not respond"
+  },
+  "errJobRunning": {
+    "message": "A download is already running"
+  },
+  "errNoRetry": {
+    "message": "Nothing to retry"
+  },
+  "errRunning": {
+    "message": "Job in progress"
+  },
+  "errMkdir": {
+    "message": "Can't create folder “$2” inside “$1”: $3"
+  },
+  "offscreenJustification": {
+    "message": "Write downloaded images directly into the user-chosen folder"
+  },
+  "optTitle": {
+    "message": "Settings"
+  },
+  "optLead": {
+    "message": "Changes are saved immediately."
+  },
+  "optFilter": {
+    "message": "Skip small images"
+  },
+  "optFilterSub": {
+    "message": "Excludes icons, avatars and tracking pixels"
+  },
+  "optMinW": {
+    "message": "Min width"
+  },
+  "optMinH": {
+    "message": "Min height"
+  },
+  "optDedupe": {
+    "message": "Remove duplicates"
+  },
+  "optDedupeSub": {
+    "message": "Keeps only the first image per URL"
+  },
+  "optAutoScroll": {
+    "message": "Auto-scroll before scanning"
+  },
+  "optAutoScrollSub": {
+    "message": "Reveals lazy-loaded images; long pages take a few extra seconds"
+  },
+  "optBg": {
+    "message": "Include background images"
+  },
+  "optBgSub": {
+    "message": "Some sites use CSS backgrounds; scanning gets slower"
+  },
+  "optSaveMode": {
+    "message": "Save method"
+  },
+  "optSaveBrowser": {
+    "message": "Browser download (default)"
+  },
+  "optSaveDirect": {
+    "message": "Write directly into a folder I choose"
+  },
+  "optDirLabel": {
+    "message": "Save location: "
+  },
+  "optDirSub": {
+    "message": "Chrome doesn't allow picking Desktop, Documents or Downloads themselves. Create a folder on the Desktop (e.g. “Images”) and pick that; each download's folder is created inside it."
+  },
+  "optGrant": {
+    "message": "Grant access"
+  },
+  "optPick": {
+    "message": "Choose folder"
+  },
+  "optConcurrency": {
+    "message": "Parallel downloads"
+  },
+  "optNoteDirect": {
+    "message": "“Direct write” mode: pick a location once; each download creates a folder with the name you enter inside it and writes the images directly. It bypasses the browser's download list, so it doesn't interfere with download managers like IDM. After restarting the browser, the first download asks you to click “Grant access” once."
+  },
+  "optNoteBrowser": {
+    "message": "“Browser download” mode: images go to a subfolder of Chrome's default download directory. If a download-manager extension like IDM is also enabled, its card shows a harmless filename-conflict notice."
+  },
+  "saved": {
+    "message": "Saved"
+  },
+  "notChosen": {
+    "message": "Not chosen"
+  },
+  "granted": {
+    "message": " (access granted)"
+  },
+  "notGranted": {
+    "message": " (not granted this session)"
+  },
+  "noFsApi": {
+    "message": "This browser doesn't support writing into folders directly. Please use “Browser download” mode."
+  }
+}

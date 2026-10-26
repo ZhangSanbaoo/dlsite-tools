@@ -1,0 +1,260 @@
+{
+  "extName": {
+    "message": "順番画像ダウンローダー"
+  },
+  "extDesc": {
+    "message": "ページ内の画像を上から順にプレビュー・選択・ドラッグで並べ替えて一括ダウンロード。00、01…と自動で連番にします。"
+  },
+  "folderPlaceholder": {
+    "message": "フォルダ名を入力（必須）"
+  },
+  "startDownload": {
+    "message": "ダウンロード開始"
+  },
+  "settings": {
+    "message": "設定"
+  },
+  "viewProgress": {
+    "message": "進捗を見る ›"
+  },
+  "scanning": {
+    "message": "ページを走査中…"
+  },
+  "selectAll": {
+    "message": "すべて選択"
+  },
+  "selectNone": {
+    "message": "すべて解除"
+  },
+  "rescan": {
+    "message": "再走査"
+  },
+  "rescanTitle": {
+    "message": "ページを走査し直す（現在の選択と並び順は破棄されます）"
+  },
+  "pickHint": {
+    "message": "クリックで選択／解除、ドラッグで並べ替え。番号は選択した画像の順に 00 から付き、ページを再読み込みするまで保持されます。"
+  },
+  "scanBtn": {
+    "message": "走査を開始"
+  },
+  "scanningLong": {
+    "message": "ページを走査中（遅延読み込み画像のため自動スクロールします）…"
+  },
+  "pageUnsupported": {
+    "message": "このページは対象外です"
+  },
+  "pageUnsupportedLong": {
+    "message": "このページは走査できません（ブラウザ内部ページやウェブストアではスクリプトを実行できません）。"
+  },
+  "scanFailed": {
+    "message": "走査に失敗"
+  },
+  "scanFailedLong": {
+    "message": "走査に失敗しました：$1\nページを再読み込みしてやり直してください。"
+  },
+  "noResponse": {
+    "message": "応答なし"
+  },
+  "noImages": {
+    "message": "画像が見つかりません"
+  },
+  "noImagesLong": {
+    "message": "条件に合う画像がありません。\n設定でサイズフィルタをオフにするか背景画像を含めて再走査してください。"
+  },
+  "inlineImage": {
+    "message": "(埋め込み画像)"
+  },
+  "countStatus": {
+    "message": "全 $1 枚、選択 $2 枚"
+  },
+  "folderNameFirst": {
+    "message": "先にフォルダ名を入力してください"
+  },
+  "cannotStart": {
+    "message": "ダウンロードを開始できません：$1"
+  },
+  "noDirConfirm": {
+    "message": "保存先がまだ選ばれていません。設定ページを開いてフォルダを選びますか？\n（Chrome ではデスクトップそのものは選べません。デスクトップに新しいフォルダを作ってそれを選んでください。）"
+  },
+  "needPermConfirm": {
+    "message": "ダウンロードには「$1」フォルダへのアクセス許可が必要です。確認ダイアログが出なかった場合は設定ページの「アクセスを許可」を押してください。設定ページを開きますか？"
+  },
+  "noDirShort": {
+    "message": "保存先がまだ選ばれていません。"
+  },
+  "goPickDir": {
+    "message": "設定でフォルダを選ぶ"
+  },
+  "needPermShort": {
+    "message": "「$1」フォルダへのアクセス許可が必要です。"
+  },
+  "grantAccessTo": {
+    "message": "「$1」へのアクセスを許可"
+  },
+  "errorPrefix": {
+    "message": "エラー：$1"
+  },
+  "retry": {
+    "message": "再試行"
+  },
+  "bannerRunning": {
+    "message": "「$1」にダウンロード中：$2 / $3"
+  },
+  "bannerDone": {
+    "message": "「$1」完了：成功 $2"
+  },
+  "bannerDoneFailed": {
+    "message": "「$1」完了：成功 $2、失敗 $3"
+  },
+  "downloading": {
+    "message": "ダウンロード中"
+  },
+  "doneWithFail": {
+    "message": "完了（失敗あり）"
+  },
+  "allDone": {
+    "message": "すべて完了"
+  },
+  "statOk": {
+    "message": "成功"
+  },
+  "statFail": {
+    "message": "失敗"
+  },
+  "statWait": {
+    "message": "待機"
+  },
+  "retryFailed": {
+    "message": "失敗した画像を再試行"
+  },
+  "openFolder": {
+    "message": "フォルダを開く"
+  },
+  "backAdjust": {
+    "message": "‹ 選択に戻る"
+  },
+  "hintBackground": {
+    "message": "このウィンドウを閉じてもダウンロードはバックグラウンドで続きます。"
+  },
+  "hintDirect": {
+    "message": "「$1」に直接書き込み中。このウィンドウを閉じてもダウンロードは続きます。"
+  },
+  "failedPrefix": {
+    "message": "失敗：$1"
+  },
+  "errDirect": {
+    "message": "直接ダウンロード: $1"
+  },
+  "errNoType": {
+    "message": "画像形式を判定できず、直接ダウンロードをスキップ"
+  },
+  "errInPage": {
+    "message": "ページ内取得: $1"
+  },
+  "errBackground": {
+    "message": "バックグラウンド取得: $1"
+  },
+  "errEmpty": {
+    "message": "空の応答"
+  },
+  "errOffscreenNoResp": {
+    "message": "バックグラウンド文書が応答しません"
+  },
+  "errJobRunning": {
+    "message": "ダウンロードがすでに進行中です"
+  },
+  "errNoRetry": {
+    "message": "再試行するものがありません"
+  },
+  "errRunning": {
+    "message": "処理中です"
+  },
+  "errMkdir": {
+    "message": "「$1」内にフォルダ「$2」を作成できません：$3"
+  },
+  "offscreenJustification": {
+    "message": "ダウンロードした画像をユーザーが選んだフォルダへ直接書き込む"
+  },
+  "optTitle": {
+    "message": "設定"
+  },
+  "optLead": {
+    "message": "変更は即座に保存されます。"
+  },
+  "optFilter": {
+    "message": "小さい画像を除外"
+  },
+  "optFilterSub": {
+    "message": "アイコン・アバター・トラッキング画像を除きます"
+  },
+  "optMinW": {
+    "message": "幅の下限"
+  },
+  "optMinH": {
+    "message": "高さの下限"
+  },
+  "optDedupe": {
+    "message": "重複を除外"
+  },
+  "optDedupeSub": {
+    "message": "同じ URL の画像は最初の 1 枚だけ残します"
+  },
+  "optAutoScroll": {
+    "message": "走査前に自動スクロール"
+  },
+  "optAutoScrollSub": {
+    "message": "遅延読み込み画像を表示させます。長いページでは数秒余計にかかります"
+  },
+  "optBg": {
+    "message": "背景画像も含める"
+  },
+  "optBgSub": {
+    "message": "CSS 背景で画像を表示するサイト向け。走査は遅くなります"
+  },
+  "optSaveMode": {
+    "message": "保存方法"
+  },
+  "optSaveBrowser": {
+    "message": "ブラウザのダウンロード（既定）"
+  },
+  "optSaveDirect": {
+    "message": "選んだフォルダに直接書き込む"
+  },
+  "optDirLabel": {
+    "message": "保存先："
+  },
+  "optDirSub": {
+    "message": "Chrome ではデスクトップ・ドキュメント・ダウンロードそのものは選べません。デスクトップに新しいフォルダ（例：「画像」）を作ってそれを選んでください。各ダウンロードのフォルダはその中に作られます。"
+  },
+  "optGrant": {
+    "message": "アクセスを許可"
+  },
+  "optPick": {
+    "message": "フォルダを選ぶ"
+  },
+  "optConcurrency": {
+    "message": "同時ダウンロード数"
+  },
+  "optNoteDirect": {
+    "message": "「直接書き込み」モード：保存先を一度選ぶと、以後は入力した名前のフォルダをその中に作って画像を直接書き込みます。ブラウザのダウンロード一覧を経由しないため IDM などのダウンローダーと干渉しません。ブラウザ再起動後の最初のダウンロード時に「アクセスを許可」を一度押す必要があります。"
+  },
+  "optNoteBrowser": {
+    "message": "「ブラウザのダウンロード」モード：Chrome の既定ダウンロード先のサブフォルダに保存します。IDM などのダウンロード拡張と併用すると、IDM 側に無害なファイル名競合の表示が出ます。"
+  },
+  "saved": {
+    "message": "保存しました"
+  },
+  "notChosen": {
+    "message": "未選択"
+  },
+  "granted": {
+    "message": "（許可済み）"
+  },
+  "notGranted": {
+    "message": "（このセッションでは未許可）"
+  },
+  "noFsApi": {
+    "message": "このブラウザはフォルダへの直接書き込みに対応していません。「ブラウザのダウンロード」モードをご利用ください。"
+  }
+}

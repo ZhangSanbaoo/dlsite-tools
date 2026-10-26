@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title data-i18n="optTitle">设置</title>
+<style>
+  :root { --bg:#1d2331; --bg-raised:#252c3b; --bg-sunken:#171c27; --line:#333c4e; --text:#e8ebf1; --text-dim:#8d97aa; --accent:#f0b14a; --accent-ink:#1a1405; --accent-soft:rgba(240,177,74,.16); --ok:#4ccf8f; }
+  * { box-sizing: border-box; }
+  body {
+    width: 440px; margin: 0; padding: 18px 22px 22px; background: var(--bg); color: var(--text);
+    font: 13px/1.5 "Inter", -apple-system, "Segoe UI", "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1 { font-size: 15px; font-weight: 600; margin: 0 0 6px; }
+  .lead { margin: 0 0 14px; color: var(--text-dim); font-size: 12px; }
+  .row { display: flex; align-items: center; gap: 12px; padding: 11px 0; border-bottom: 1px solid var(--line); }
+  .row:last-of-type { border-bottom: none; }
+  .row label { flex: 1; cursor: pointer; }
+  .row small { display: block; color: var(--text-dim); font-size: 12px; }
+  .sub { padding: 6px 0 12px 28px; gap: 18px; border-bottom: 1px solid var(--line); }
+  .sub[hidden] { display: none; }
+  .sub label { flex: 0; white-space: nowrap; color: var(--text-dim); }
+  input[type=number] {
+    width: 64px; height: 30px; padding: 0 8px; margin: 0 4px; font: inherit; color: var(--text);
+    background: var(--bg-sunken); border: 1px solid var(--line); border-radius: 6px; outline: none; font-variant-numeric: tabular-nums;
+  }
+  input[type=number]:focus { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+  input[type=checkbox] {
+    appearance: none; width: 36px; height: 20px; margin: 0; flex: none; border-radius: 999px; background: var(--line);
+    position: relative; cursor: pointer; transition: background .15s;
+  }
+  input[type=checkbox]::after {
+    content: ''; position: absolute; top: 2px; left: 2px; width: 16px; height: 16px; border-radius: 50%;
+    background: var(--text); transition: transform .15s;
+  }
+  input[type=checkbox]:checked { background: var(--accent); }
+  input[type=checkbox]:checked::after { transform: translateX(16px); background: var(--accent-ink); }
+  input[type=checkbox]:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  select { height: 30px; padding: 0 8px; font: inherit; color: var(--text); background: var(--bg-sunken); border: 1px solid var(--line); border-radius: 6px; }
+  .btn { height: 30px; padding: 0 12px; font: inherit; color: var(--accent-ink); background: var(--accent); border: none; border-radius: 6px; cursor: pointer; font-weight: 600; }
+  .btn:hover { filter: brightness(1.08); }
+  .btn.ghost { background: transparent; color: var(--accent); border: 1px solid var(--accent); }
+  #dirRow label { flex: 1; color: var(--text-dim); white-space: normal; }
+  #dirRow b { color: var(--text); font-weight: 500; }
+  .saved { color: var(--ok); font-size: 12px; margin-top: 10px; height: 16px; }
+  .note { color: var(--text-dim); font-size: 12px; margin: 10px 0 0; line-height: 1.6; }
+  .note b { color: var(--text); font-weight: 500; }
+</style>
+</head>
+<body>
+  <h1 data-i18n="optTitle">设置</h1>
+  <p class="lead" data-i18n="optLead">改动会立即保存。</p>
+
+  <div class="row">
+    <input type="checkbox" id="filterEnabled">
+    <label for="filterEnabled"><span data-i18n="optFilter">跳过小图片</span><small data-i18n="optFilterSub">排除图标、头像、追踪像素</small></label>
+  </div>
+  <div class="row sub" id="filterSizes">
+    <label><span data-i18n="optMinW">宽至少</span><input type="number" id="minWidth" min="0" step="1">px</label>
+    <label><span data-i18n="optMinH">高至少</span><input type="number" id="minHeight" min="0" step="1">px</label>
+  </div>
+
+  <div class="row">
+    <input type="checkbox" id="dedupe">
+    <label for="dedupe"><span data-i18n="optDedupe">去掉重复图片</span><small data-i18n="optDedupeSub">相同地址只保留第一张</small></label>
+  </div>
+
+  <div class="row">
+    <input type="checkbox" id="autoScroll">
+    <label for="autoScroll"><span data-i18n="optAutoScroll">扫描前自动滚动页面</span><small data-i18n="optAutoScrollSub">让懒加载的图片显示出来，长页面会多花几秒</small></label>
+  </div>
+
+  <div class="row">
+    <input type="checkbox" id="includeBackground">
+    <label for="includeBackground"><span data-i18n="optBg">同时抓取背景图</span><small data-i18n="optBgSub">有些网站把图片做成 CSS 背景；开启后扫描会变慢</small></label>
+  </div>
+
+  <div class="row">
+    <label for="saveMode" data-i18n="optSaveMode">保存方式</label>
+    <select id="saveMode">
+      <option value="browser" data-i18n="optSaveBrowser">浏览器下载（默认）</option>
+      <option value="direct" data-i18n="optSaveDirect">直接写入我选的文件夹</option>
+    </select>
+  </div>
+  <div class="row sub" id="dirRow">
+    <label><span data-i18n="optDirLabel">保存位置：</span><b id="dirName">尚未选择</b><small data-i18n="optDirSub">Chrome 不允许直接选「桌面」「文档」「下载」这几个文件夹本身。</small></label>
+    <button type="button" id="grantDirBtn" class="btn ghost" hidden data-i18n="optGrant">允许访问</button>
+    <button type="button" id="pickDirBtn" class="btn" data-i18n="optPick">选择文件夹</button>
+  </div>
+
+  <div class="row">
+    <label for="concurrency" data-i18n="optConcurrency">同时下载数量</label>
+    <input type="number" id="concurrency" min="1" max="8" step="1">
+  </div>
+
+  <div class="saved" id="saved"></div>
+  <p class="note" id="noteDirect" data-i18n="optNoteDirect"></p>
+  <p class="note" id="noteBrowser" hidden data-i18n="optNoteBrowser"></p>
+
+  <script src="i18n.js"></script>
+  <script src="settings.js"></script>
+  <script src="options.js"></script>
+</body>
+</html>
